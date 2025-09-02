@@ -292,8 +292,6 @@ nav > ul > li > a:visited {
 .logo {
     width: 40vw;
     max-width: 90px;
-    height: auto;
-    display: inline-block;
 }
 
 .ig {
