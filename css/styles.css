@@ -52,7 +52,7 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-img {
+img{
     max-width: 100%;
     height: auto;
 }
@@ -61,16 +61,14 @@ a {
     color: #1710f3;
     text-decoration: none;
 }
-
 a:visited {
-    color: #000000;
+    color: #FDCA40;
 }
-
-a:hover,
+/* a:hover,
 a:focus {
     color: #DF2935;
     text-decoration: underline;
-}
+} */
 a:active {
     color: #6f151b;
     text-decoration: underline;
@@ -88,8 +86,8 @@ a:active {
     transition: 0.2s opacity;
     transition-property: opacity;
     }
-.button:hover {
-    transform: translateY(-1px);
+.button:hover,
+.button:active {
     text-decoration: none;
     opacity: 0.8;
 }
@@ -124,29 +122,6 @@ a:active {
     to {transform: translate(100px,48px);}
 }
 
-@keyframes spin {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-
-#logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Optional: add some padding */
-    padding: 10px;
-    /* Remove width/height restrictions if present */
-    overflow: visible;
-}
-
-.logo {
-    display: block;
-    animation: spin;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
 .sun {
     animation-duration: 4s;
     animation-name: color-change;
@@ -175,7 +150,7 @@ a:active {
 /* Layout Styling */
 
 .container {
-    padding: 0 15px;
+    padding: 15px 0;
 }
 
 .footer-container {
@@ -223,10 +198,11 @@ a:active {
 
 
 header {
-    background: #a8c2ff;
+    background-color: #ffe4c4;
     padding: 10px 0;
     width: 100%; 
-	height: auto; 
+	height: [object Object]px; 
+	background: #ffe4c4; 
 	border: solid #BDBDBD 1px; 
 	box-shadow: 9px 5px 15px rgba(0, 0, 0, 0.2)  ; 
 	-webkit-box-shadow: 9px 5px 15px rgba(0, 0, 0, 0.2)  ; 
@@ -286,11 +262,10 @@ nav > ul > li > a:visited {
     padding: 0 15px;
     text-decoration: uppercase;
     font-weight: 700px;
-    color: #3772FF;
+    color: #FDCA40;
 }
 
-img.logo {
-    width: 40vw;
+.logo {
     max-width: 90px;
 }
 
@@ -321,7 +296,7 @@ img.logo {
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid #DF2935;
+    border-top: 1px solid rgba(255,127,80,0.5);
 }
 
 .navigation.responsive nav {
@@ -330,10 +305,6 @@ img.logo {
 
 .navtoggle.responsive li:last-child {
     padding: 0 0 10px;
-}
-
-.navigation {
-    display: inline-block;
 }
 
 /* Media Queries */
