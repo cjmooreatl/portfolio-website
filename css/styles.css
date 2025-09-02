@@ -52,8 +52,8 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-img{
-    max-width: 100%;
+img {
+    max-width: 40vw;
     height: auto;
 }
 
