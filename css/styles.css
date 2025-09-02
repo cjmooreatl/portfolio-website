@@ -289,7 +289,7 @@ nav > ul > li > a:visited {
     color: #3772FF;
 }
 
-.logo {
+img.logo {
     width: 40vw;
     max-width: 90px;
 }
